@@ -26,6 +26,7 @@
     @media(max-width:520px){section{padding:52px 0}.hero h1{font-size:2.65rem}.paper-grid,.plan-grid,.channels{grid-template-columns:1fr}.paper-cell{border-right:0}.module summary{padding:16px}.lesson{padding:5px 16px 18px}.question-card{padding:18px}.stamp{white-space:normal}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chev,.progress i{transition:none}}
   </style>
+<link rel="stylesheet" href="assets/topics.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to study material</a>
@@ -63,6 +64,17 @@ next.addEventListener('click',function(){if(qi<questions.length-1){qi++;render()
 })();
 </script>
 
+<!-- ==================== #topics — topic library (study material) ==================== -->
+<section class="topic-lib-sec" id="topics" aria-label="Study material by topic">
+<div style="max-width:1180px;margin:0 auto;padding:0 20px">
+<p class="tl-kicker">Study material</p>
+<h2 class="tl-h2">Learn it topic by topic</h2>
+<p class="tl-sub">Every card below opens a full study page for that topic — a plain-language explanation, key facts and tables, diagrams, and quick-revision questions with answers. The practice papers at the end are full timed mocks with instant scores and complete answer keys. Everything runs in your browser; nothing is sent anywhere.</p>
+<div id="topic-lib"></div>
+</div>
+</section>
+<script src="assets/topics-teaching.js"></script>
+<script src="assets/topics.js"></script>
 <section class="eph-comments" id="comments" aria-label="Comments and suggestions">
   <h2>Comments &amp; suggestions</h2>
   <p class="eph-comments-note">Spotted a mistake, an outdated date, or a missing topic? Leave a comment below &mdash; it helps improve this page for everyone.</p>
